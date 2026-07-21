@@ -1,0 +1,1 @@
+import{j as n}from"./index-BoXTEpD0.js";const f="_paper_ofoyz_3",r="_left_ofoyz_43",_="_right_ofoyz_47",l="_flat_ofoyz_51",p="_hand_ofoyz_55",o={paper:f,left:r,right:_,flat:l,hand:p};function i({children:t,tilt:s="left",hand:a=!1}){const e=[o.paper,o[s],a?o.hand:""].filter(Boolean).join(" ");return n.jsx("div",{className:e,children:t})}export{i as P};

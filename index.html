@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Never disable zoom (ACCESSIBILITY LAW). viewport-fit=cover lets the
+         scene reach under the notch and home indicator; the app pads fixed UI
+         with env(safe-area-inset-*) so nothing hides behind them. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <!-- SECRECY LAW: ordinary café copy only. The premise never ships. -->
+    <meta name="description" content="A small café on a quiet street. Open late, never in a hurry." />
+    <!-- Warm lamp-lit browser chrome, not the default grey. -->
+    <meta name="theme-color" content="#2A1D16" />
+
+    <!-- Add to Home Screen: opens without browser chrome, warm all the way. -->
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Bebu's Café" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      TYPOGRAPHY LAW: four families, ONE request, display=swap.
+      Fraunces, display / signage      only 400 + 600 are ever rendered
+      Karla, body / UI                 400, 500, 600, 700
+      Kalam, handwriting (chalkboard)  400, 700
+      Courier Prime, receipts          400, 700
+      Weights are subset to exactly what the components use; Fraunces 500
+      and 700 were dropped because nothing renders them. Max 3 families on
+      screen at once is enforced in the components, not here.
+    -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Karla:wght@400;500;600;700&family=Kalam:wght@400;700&family=Courier+Prime:wght@400;700&display=swap"
+    />
+
+    <title>Bebu's Café</title>
+    <script type="module" crossorigin src="./assets/index-BoXTEpD0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DezFP_xv.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

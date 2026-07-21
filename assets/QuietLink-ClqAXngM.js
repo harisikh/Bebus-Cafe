@@ -1,0 +1,1 @@
+import{j as t,L as a}from"./index-BoXTEpD0.js";const p="_link_1pb54_3",l="_emphasis_1pb54_32",s={link:p,emphasis:l};function o({to:i,children:n,emphasis:e=!1}){return t.jsx(a,{to:i,className:e?`${s.link} ${s.emphasis}`:s.link,children:n})}export{o as Q};
